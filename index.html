@@ -9,8 +9,17 @@
     </head>
     <body style="background-color: #D2A2B7;">
         <h1>Hello <span title="urodzony w 2020 r.">Czesio!</span> &#128568</h1>
-          <p>Witaj na swojej <b title="*najklawszej">klawej</b> stronie!</p>
+          <p>Witaj na swojej <b title="*najklawszej">klawej</b> stronie <sup> <a href="#[01]">[01]</a></sup>!</p>
+          <form action="login.php" method="post">
+            Login: <input type="text" name="login" required> <br>
+            Hasło: <input type="password" name="pw"> <br>
+            <input type="submit" value="Zaloguj się">
+          </form>
           <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="433" height="577">
+          <p>
+            <q><i>Miau</i></q>
+            <cite>Czesław Kuryłko</cite>
+        </p>
           <p>Co Czesław robi w życiu?</p>
           <ol>
             <li>Czesław je &#128523 </li> 
@@ -24,12 +33,29 @@
                 klawymi <a href="https://www.zooplus.pl/" target="_blank" rel="noopener noreferrer">zabawkami</a> 
             </i>
           </ol>
+          <form action="ankieta.php">
+              <fieldset>
+                  <legend>Jak długo w ciągu dnia śpi Czesio? <br></legend>
+                  <input type="radio" name="sen_czesia" id="sen_czesia1" value="nigdy"><label for="sen_czesia1">Czesio nigdy nie śpi tylko czuwa.</label></input><br>
+                  <input type="radio" name="sen_czesia" id="sen_czesia2" value="z przerwą"><label for="sen_czesia2">Czesio przesypia całe dnie z przerwą na jedzenie i zabawę.</label></input><br>
+                  <input type="radio" name="sen_czesia" id="sen_czesia3" value="8 godzin"><label for="sen_czesia3">Czesio przesypia zdrowe 8 godzin dziennie.</label></input><br>
+              </fieldset>
+              
+                <fieldset>
+                    <legend>Co najbardziej lubisz w Czesiu?</legend>
+                    <input type="checkbox" name="preferencje" id="nosek" value="nosek"><label for="nosek">Nosek</label></input><br>
+                    <input type="checkbox" name="preferencje" id="łapki" value="łapki"><label for="łapki">Łapki</label></input><br>
+                    <input type="checkbox" name="preferencje" id="ogonek" value="ogonek"><label for="ogonek">Ogonek</label></input><br>
+                </fieldset>
+              <input type="submit" value="Wyślij"><br><br>
+          </form>
           <address>
-          W przypadku wątpliwości co do preferencji Czesia skontaktuj się z nami: <br>
+          W przypadku wątpliwości co do preferencji jedzeniowych Czesia skontaktuj się z nami: <br>
           <a href="mailto:klaudia.trepa@gmail.com?subject=Puk puk, tu Czesio!">klaudia.trepa@gmail.com</a><br>
           <a href="tel:+48507700859">507700859</a><br><br>
-          <a href="#top">Do góry</a>
+          <a href="#top">Do góry</a> <br><br>
         </address>
+        <p id="[01]"><sup>[01]</sup>Strona została stworzona przez Maupkę.</p>
 
     </body>
 </html>
