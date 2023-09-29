@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
+        <link rel="stylesheet" href="css/style.css">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="description" content="Czesław to najlepszy kotek na świecie. Poznaj Czesława!">
        <title>
         Czesław Kuryłko
        </title> 
     </head>
-    <body style="background-color: #D2A2B7;">
-        <h1>Hello <span title="urodzony w 2020 r.">Czesio!</span> &#128568</h1>
-          <p>Witaj na swojej <b title="*najklawszej">klawej</b> stronie <sup> <a href="#[01]">[01]</a></sup>!</p>
-          <form action="login.php" method="post">
-            Login: <input type="text" name="login" required> <br>
-            Hasło: <input type="password" name="pw"> <br>
-            <input type="submit" value="Zaloguj się">
-          </form>
-          <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="433" height="577">
-          <p>
+    <body>
+        <h1 class="introduction" id="hello">Hello <span title="urodzony w 2020 r.">Czesio!</span> &#128568</h1>
+          <p class="introduction">Witaj na swojej <b title="*najklawszej">klawej</b> stronie <sup> <a href="#[01]">[01]</a></sup>!</p>
+              <form id=login action="login.php" method="post">
+                Login: <input type="text" name="login" required> <br>
+                Hasło: <input type="password" name="pw"> <br>
+                <input type="submit" value="Zaloguj się">
+              </form>
+          <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="433" height="577" id="czesio-img">
+          <p id="quot">
             <q><i>Miau</i></q>
             <cite>Czesław Kuryłko</cite>
         </p>
-          <p>Co Czesław robi w życiu?</p>
+          <p class="poll-question">Co Czesław robi w życiu?</p>
           <ol>
             <li>Czesław je &#128523 </li> 
                 <i> 
@@ -37,7 +38,7 @@
           </ol>
           <table border="1">
             <thead>
-                <caption>Co Czesio robi w ciągu dnia?</caption> 
+                <caption class="poll-question">Co Czesio robi w ciągu dnia?</caption> 
             </thead>
             <tbody>
                 <tr>
@@ -86,9 +87,9 @@
           <br>
           <form action="ankieta.php" method="post">
               <fieldset>
-                  <legend>Jak długo w ciągu dnia śpi Czesio? <br></legend>
+                  <legend class="poll-question">Jak długo w ciągu dnia śpi Czesio? <br></legend>
                   <input type="radio" name="sen_czesia" id="sen_czesia1" value="nigdy"><label for="sen_czesia1">Czesio nigdy nie śpi tylko czuwa.</label></input><br>
-                  <input type="radio" name="sen_czesia" id="sen_czesia2" value="z przerwą"><label for="sen_czesia2">Czesio przesypia całe dnie z przerwą na jedzenie i zabawę.</label></input><br>
+                  <input type="radio" name="sen_czesia" id="sen_czesia2" value="z przerwą"><labeln for="sen_czesia2">Czesio przesypia całe dnie z przerwą na jedzenie i zabawę.</labeln></input><br>
                   <input type="radio" name="sen_czesia" id="sen_czesia3" value="8 godzin"><label for="sen_czesia3">Czesio przesypia zdrowe 8 godzin dziennie.</label></input><br>
               </fieldset>
               <input type="submit" value="Wyślij"><br><br>
@@ -96,14 +97,14 @@
               <br>
                 <form action="ankieta.php" method="post">
                     <fieldset>
-                        <legend>Co najbardziej lubisz w Czesiu?</legend>
+                        <legend class="poll-question">Co najbardziej lubisz w Czesiu?</legend>
                         <input type="checkbox" name="preferencje" id="nosek" value="nosek"><label for="nosek">Nosek</label></input><br>
                         <input type="checkbox" name="preferencje" id="łapki" value="łapki"><label for="łapki">Łapki</label></input><br>
                         <input type="checkbox" name="preferencje" id="ogonek" value="ogonek"><label for="ogonek">Ogonek</label></input><br>
                     </fieldset>
                     <input type="submit" value="Wyślij"><br><br>
                 </form>
-          W przypadku wątpliwości co do preferencji jedzeniowych Czesia <a href="contact.html">skontaktuj się z nami</a>! <br><br>
+          <p>W przypadku wątpliwości co do preferencji jedzeniowych Czesia <a href="contact.html">skontaktuj się z nami</a>! <br><br></p>
           <a href="#top">Do góry</a> <br>
         <p id="[01]"><sup>[01]</sup>Strona została stworzona przez Maupkę.</p>
 

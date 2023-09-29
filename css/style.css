@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(210, 162, 183);
+}
+#hello{
+    color: rgb(97, 36, 62)
+}
+.introduction {
+    text-align: center;
+}
+#login{
+    text-align: right;   
+}
+#czesio-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quot{
+    text-align: center;
+}
+.poll-question{
+    color: rgb(97, 36, 62);
+    font-weight: bold;
+}
+
