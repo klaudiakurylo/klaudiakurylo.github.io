@@ -1,113 +1,126 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="description" content="Czesław to najlepszy kotek na świecie. Poznaj Czesława!">
-       <title>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Czesław to najlepszy kotek na świecie. Poznaj Czesława!">
+    <title>
         Czesław Kuryłko
-       </title> 
-    </head>
-    <body>
-        <h1 class="introduction" id="hello">Hello <span title="urodzony w 2020 r.">Czesio!</span> &#128568</h1>
-          <p class="introduction">Witaj na swojej <b title="*najklawszej">klawej</b> stronie <sup> <a href="#[01]">[01]</a></sup>!</p>
-              <form id=login action="login.php" method="post">
-                Login: <input type="text" name="login" required> <br>
-                Hasło: <input type="password" name="pw"> <br>
-                <input type="submit" value="Zaloguj się">
-              </form>
-          <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="433" height="577" id="czesio-img">
-          <p id="quot">
-            <q><i>Miau</i></q>
-            <cite>Czesław Kuryłko</cite>
-        </p>
-          <p class="poll-question">Co Czesław robi w życiu?</p>
-          <ol>
-            <li>Czesław je &#128523 </li> 
-                <i> 
-                    <a href="https://zoopers.pl/koty/karma/karma-sucha/168/k?akc=skl&menu=168&str=1&typ=&sx=&sgl=&sort=3D&pns=12&prod%5B275%5D=on&flt%5B141%5D=on&sp=" target="_blank" rel="noopener noreferrer">karmę suchą</a> 
-                    oraz 
-                    <a href="https://vetexpert.eu/sklep/kot/karmy/karmy-dla-kotow-sterylizowanych/?_gl=1*1xyybql*_up*MQ..&gclid=EAIaIQobChMIgsygidHNgQMVv1eRBR0MqQjcEAAYASAAEgIl1fD_BwE" target="_blank" rel="noopener noreferrer">karmę mokrą</a>
-                </i>
-            <li>Czesław śpi &#128564</li>
-            <i>na drzemadle lub na parapecie</i>
-            <li>Czesław się bawi &#128569</li>
-            <i>
-                klawymi <a href="https://www.zooplus.pl/" target="_blank" rel="noopener noreferrer">zabawkami</a> 
-            </i>
-          </ol>
-          <table border="1">
-            <thead>
-                <caption class="poll-question">Co Czesio robi w ciągu dnia?</caption> 
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Godziny</th>
-                    <th>Zajęcia</th>
-                </tr>
-                <tr>
-                    <td>06:00 - 07:00</td>
-                    <td>brojenie z Lolkiem</td>
-                </tr>
-                <tr>
-                    <td>08:00 - 09:00</td>
-                    <td rowspan="3">sen</td>
-                </tr>
-                <tr>
-                    <td>10:00 - 11:00</td>
-                </tr>
-                <tr>
-                    <td>12:00 - 13:00</td>
-                </tr>
-                <tr>
-                    <td>14:00 - 15:00</td>
-                    <td>jedzenie i zaczepianie Lolka</td>
-                </tr>
-                <tr>
-                    <td>16:00 - 17:00</td>
-                    <td rowspan="2">sen</td>
-                </tr>
-                <tr>
-                    <td>18:00 - 19:00</td>
-                </tr>
-                <tr>
-                    <td>20:00 - 21:00</td>
-                    <td>jedzenie mokrej karmy i brojenie</td>
-                </tr>
-                <tr>
-                    <td>22:00 - 23:00</td>
-                    <td>brojenie</td>
-                </tr>
-                <tr>
-                    <td>00:00 - 05:00</td>
-                    <td>sen</td>
-                </tr>
-            </tbody>
-          </table>
-          <br>
-          <form action="ankieta.php" method="post">
-              <fieldset>
-                  <legend class="poll-question">Jak długo w ciągu dnia śpi Czesio? <br></legend>
-                  <input type="radio" name="sen_czesia" id="sen_czesia1" value="nigdy"><label for="sen_czesia1">Czesio nigdy nie śpi tylko czuwa.</label></input><br>
-                  <input type="radio" name="sen_czesia" id="sen_czesia2" value="z przerwą"><labeln for="sen_czesia2">Czesio przesypia całe dnie z przerwą na jedzenie i zabawę.</labeln></input><br>
-                  <input type="radio" name="sen_czesia" id="sen_czesia3" value="8 godzin"><label for="sen_czesia3">Czesio przesypia zdrowe 8 godzin dziennie.</label></input><br>
-              </fieldset>
-              <input type="submit" value="Wyślij"><br><br>
-            </form>
-              <br>
-                <form action="ankieta.php" method="post">
-                    <fieldset>
-                        <legend class="poll-question">Co najbardziej lubisz w Czesiu?</legend>
-                        <input type="checkbox" name="preferencje" id="nosek" value="nosek"><label for="nosek">Nosek</label></input><br>
-                        <input type="checkbox" name="preferencje" id="łapki" value="łapki"><label for="łapki">Łapki</label></input><br>
-                        <input type="checkbox" name="preferencje" id="ogonek" value="ogonek"><label for="ogonek">Ogonek</label></input><br>
-                    </fieldset>
-                    <input type="submit" value="Wyślij"><br><br>
-                </form>
-          <p>W przypadku wątpliwości co do preferencji jedzeniowych Czesia <a href="contact.html">skontaktuj się z nami</a>! <br><br></p>
-          <a href="#top">Do góry</a> <br>
-        <p id="[01]"><sup>[01]</sup>Strona została stworzona przez Maupkę.</p>
+    </title>
+</head>
 
-    </body>
+<body>
+    <h1 class="introduction" id="hello">Hello <span title="urodzony w 2020 r.">Czesio!</span> &#128568</h1>
+    <p class="introduction">Witaj na swojej <b title="*najklawszej">klawej</b> stronie <sup> <a
+                href="#[01]">[01]</a></sup>!</p>
+    <form id=login action="login.php" method="post">
+        Login: <input type="text" name="login" required> <br>
+        Hasło: <input type="password" name="pw"> <br>
+        <div><input type="submit" value="Zaloguj się"></div>
+    </form>
+    <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="433" height="577" id="czesio-img">
+    <p id="quot">
+        <q><i>Miau</i></q>
+        <cite>Czesław Kuryłko</cite>
+    </p>
+    <p class="poll-question">Co Czesław robi w życiu?</p>
+    <ol>
+        <li>Czesław je &#128523 </li>
+        <i>
+            <a href="https://zoopers.pl/koty/karma/karma-sucha/168/k?akc=skl&menu=168&str=1&typ=&sx=&sgl=&sort=3D&pns=12&prod%5B275%5D=on&flt%5B141%5D=on&sp="
+                target="_blank" rel="noopener noreferrer">karmę suchą</a>
+            oraz
+            <a href="https://vetexpert.eu/sklep/kot/karmy/karmy-dla-kotow-sterylizowanych/?_gl=1*1xyybql*_up*MQ..&gclid=EAIaIQobChMIgsygidHNgQMVv1eRBR0MqQjcEAAYASAAEgIl1fD_BwE"
+                target="_blank" rel="noopener noreferrer">karmę mokrą</a>
+        </i>
+        <li>Czesław śpi &#128564</li>
+        <i>na drzemadle lub na parapecie</i>
+        <li>Czesław się bawi &#128569</li>
+        <i>
+            klawymi <a href="https://www.zooplus.pl/" target="_blank" rel="noopener noreferrer">zabawkami</a>
+        </i>
+    </ol>
+    <table>
+        <thead>
+            <caption class="poll-question">Co Czesio robi w ciągu dnia?</caption>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Godziny</th>
+                <th>Zajęcia</th>
+            </tr>
+            <tr>
+                <td>06:00 - 07:00</td>
+                <td>brojenie z Lolkiem</td>
+            </tr>
+            <tr>
+                <td>08:00 - 09:00</td>
+                <td rowspan="3">sen</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:00</td>
+                <td>jedzenie i zaczepianie Lolka</td>
+            </tr>
+            <tr>
+                <td>16:00 - 17:00</td>
+                <td rowspan="2">sen</td>
+            </tr>
+            <tr>
+                <td>18:00 - 19:00</td>
+            </tr>
+            <tr>
+                <td>20:00 - 21:00</td>
+                <td>jedzenie mokrej karmy i brojenie</td>
+            </tr>
+            <tr>
+                <td>22:00 - 23:00</td>
+                <td>brojenie</td>
+            </tr>
+            <tr>
+                <td>00:00 - 05:00</td>
+                <td>sen</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form class="poll" action="ankieta.php" method="post">
+        <fieldset>
+            <legend class="poll-question">Jak długo w ciągu dnia śpi Czesio? <br></legend>
+            <input type="radio" name="sen_czesia" id="sen_czesia1" value="nigdy"><label for="sen_czesia1">Czesio nigdy
+                nie śpi tylko czuwa.</label></input><br>
+            <input type="radio" name="sen_czesia" id="sen_czesia2" value="z przerwą">
+            <labeln for="sen_czesia2">Czesio przesypia całe dnie z przerwą na jedzenie i zabawę.</labeln></input><br>
+            <input type="radio" name="sen_czesia" id="sen_czesia3" value="8 godzin"><label for="sen_czesia3">Czesio
+                przesypia zdrowe 8 godzin dziennie.</label></input><br>
+        </fieldset>
+        <div><input class="submit" type="submit" value="Wyślij"><br><br></div>
+    </form>
+    <br>
+    <form class="poll" action="ankieta.php" method="post">
+        <fieldset>
+            <legend class="poll-question">Co najbardziej lubisz w Czesiu?</legend>
+            <input type="checkbox" name="preferencje" id="nosek" value="nosek"><label
+                for="nosek">Nosek</label></input><br>
+            <input type="checkbox" name="preferencje" id="łapki" value="łapki"><label
+                for="łapki">Łapki</label></input><br>
+            <input type="checkbox" name="preferencje" id="ogonek" value="ogonek"><label
+                for="ogonek">Ogonek</label></input><br>
+        </fieldset>
+        <div><input class="submit" type="submit" value="Wyślij"><br><br></div>
+    </form>
+    <p>W przypadku wątpliwości co do preferencji jedzeniowych Czesia <a href="contact.html">skontaktuj się z nami</a>!
+        <br><br>
+    </p>
+    <a href="#top">Do góry</a> <br>
+    <p id="[01]"><sup>[01]</sup>Strona została stworzona przez Maupkę.</p>
+
+</body>
+
 </html>
-
