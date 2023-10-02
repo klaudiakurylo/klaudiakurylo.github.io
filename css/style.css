@@ -19,6 +19,10 @@ body {
     border-radius: 8px;
 }
 
+#login div input {
+    cursor: pointer;
+}
+
 #czesio-img {
     display: block;
     margin-left: auto;
@@ -59,6 +63,7 @@ form {
     border-radius: 5px;
     padding-block: 2px;
     padding-inline: 20px;
+    cursor: pointer;
 }
 
 fieldset {
@@ -67,7 +72,50 @@ fieldset {
     width: 400px;
 }
 
+form.poll input,
+label {
+    cursor: pointer;
+}
+
 form.poll>div {
     width: 425px;
     text-align: right;
 }
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(97, 36, 62)
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    list-style-image: url(../images/catface.png)
+}
+
+.menu {
+    background-color: rgb(134, 82, 104);
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+
+}
+
+a.menu:link,
+a.menu:visited {
+    color: black;
+}
+
+a.menu:hover {
+    opacity: 0.8;
+}
+
+#menuDiv {
+    text-align: center;
+}
+
