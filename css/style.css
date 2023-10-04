@@ -1,8 +1,22 @@
 body {
     background-color: rgb(210, 162, 183);
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-weight: 800;
+    margin: 0%;
+}
+
+p {
+    margin-left: 5px;
 }
 
 #hello {
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
     color: rgb(97, 36, 62)
 }
 
@@ -21,6 +35,13 @@ body {
 
 #login div input {
     cursor: pointer;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+}
+
+#login div input:hover {
+    opacity: 0.8;
 }
 
 #czesio-img {
@@ -36,6 +57,7 @@ body {
 table {
     border: 2px solid rgb(97, 36, 62);
     border-collapse: collapse;
+    margin-left: 5px;
 }
 
 table td {
@@ -56,6 +78,7 @@ form {
 .poll-question {
     color: rgb(97, 36, 62);
     font-weight: bold;
+    font-style: italic;
 }
 
 .submit {
@@ -64,6 +87,13 @@ form {
     padding-block: 2px;
     padding-inline: 20px;
     cursor: pointer;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+}
+
+.submit:hover {
+    opacity: 0.8;
 }
 
 fieldset {
@@ -96,15 +126,14 @@ ul {
     list-style-image: url(../images/catface.png)
 }
 
-.menu {
+/*.menu {
     background-color: rgb(134, 82, 104);
     display: inline-block;
     padding: 10px;
     border: 2px solid black;
     width: 200px;
     text-align: center;
-
-}
+}*/
 
 a.menu:link,
 a.menu:visited {
@@ -115,7 +144,36 @@ a.menu:hover {
     opacity: 0.8;
 }
 
-#menuDiv {
+/* #menuDiv {
+    text-align: center;
+    background-image: url(../images/background.jpg);
+    padding: 20px;
+    border-style: solid none solid none;
+
+} */
+
+.menu {
+
+    --menu-padding: 10px;
+    padding: var(--menu-padding);
+    --menu-border: 2px;
+    border: var(--menu-border) solid black;
+    --widtha: calc(var(--menuDiv-width) / 3 - 2 * var(--menu-border) - 2 * var(--menu-padding));
+    width: var(--widtha);
+    background-color: rgb(134, 82, 104);
+    display: inline-block;
     text-align: center;
 }
 
+#menuDiv {
+    --menuDiv-width: 1000px;
+    width: var(--menuDiv-width);
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+#top {
+    margin-left: 5px;
+}
