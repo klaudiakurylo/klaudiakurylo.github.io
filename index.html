@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/reset-css@5.0.2/reset.css">
     <link
         href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Bebas+Neue&family=Bitter:wght@300&display=swap"
         rel="stylesheet">
@@ -28,10 +29,29 @@
         <div><input type="submit" value="Zaloguj się"></div>
     </form>
     <div id="menuDiv">
-        <a class="menu" href="karma.html">Karma</a><!-- 
-        --><a class="menu" href="zabawki.html">Zabawki</a><!-- 
-        --><a class="menu" href="contact.html">Kontakt</a><!--
-    --></div>
+        <ul>
+            <li>
+                <a class="menu" href="karma.html">Karma</a><!--
+                -->
+                <ul class="submenu">
+                    <li>
+                        <a href="">Karma mokra</a>
+                    </li>
+                    <li>
+                        <a href="">Karma sucha</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="menu" href="zabawki.html">Zabawki</a><!--
+                -->
+            </li>
+            <li>
+                <a class="menu" href="contact.html">Kontakt</a><!--
+                    -->
+            </li>
+        </ul>
+    </div>
     <br />
     <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="433" height="577" id="czesio-img">
     <p id="quot">
@@ -39,7 +59,7 @@
         <cite>Czesław Kuryłko</cite>
     </p>
     <p class="poll-question">Co Czesław robi w życiu?</p>
-    <ul>
+    <ul id="activityList">
         <li>Czesław je &#128523 </li>
         <i>
             <a href="https://zoopers.pl/koty/karma/karma-sucha/168/k?akc=skl&menu=168&str=1&typ=&sx=&sgl=&sort=3D&pns=12&prod%5B275%5D=on&flt%5B141%5D=on&sp="
@@ -132,7 +152,9 @@
     <p>W przypadku wątpliwości co do preferencji jedzeniowych Czesia <a href="contact.html">skontaktuj się z nami</a>!
         <br><br>
     </p>
-    <a id=top href="#top">Do góry</a> <br>
+    <aside>
+        <a id=top-button href="#top">Do góry</a>
+    </aside>
     <p id="[01]"><sup>[01]</sup>Strona została stworzona przez Maupkę.</p>
 
 </body>

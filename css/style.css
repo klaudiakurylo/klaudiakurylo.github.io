@@ -1,3 +1,8 @@
+*,
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     background-color: rgb(210, 162, 183);
     background-image: url(../images/background.jpg);
@@ -122,18 +127,19 @@ a:hover {
     opacity: 0.5;
 }
 
-ul {
+#activityList {
     list-style-image: url(../images/catface.png)
 }
 
-/*.menu {
+.menu {
     background-color: rgb(134, 82, 104);
-    display: inline-block;
-    padding: 10px;
-    border: 2px solid black;
-    width: 200px;
     text-align: center;
-}*/
+    padding: 20px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+
+}
 
 a.menu:link,
 a.menu:visited {
@@ -144,36 +150,51 @@ a.menu:hover {
     opacity: 0.8;
 }
 
-/* #menuDiv {
+#menuDiv {
     text-align: center;
     background-image: url(../images/background.jpg);
     padding: 20px;
     border-style: solid none solid none;
-
-} */
-
-.menu {
-
-    --menu-padding: 10px;
-    padding: var(--menu-padding);
-    --menu-border: 2px;
-    border: var(--menu-border) solid black;
-    --widtha: calc(var(--menuDiv-width) / 3 - 2 * var(--menu-border) - 2 * var(--menu-padding));
-    width: var(--widtha);
-    background-color: rgb(134, 82, 104);
+    position: sticky;
+    top: 0%;
     display: inline-block;
-    text-align: center;
-}
-
-#menuDiv {
-    --menuDiv-width: 1000px;
-    width: var(--menuDiv-width);
-    text-align: center;
-    margin: 0 auto;
-
+    width: 1865px;
 
 }
 
-#top {
-    margin-left: 5px;
+#menuDiv ul {
+    list-style-type: none;
+}
+
+#menuDiv li {
+    display: inline-block;
+}
+
+.submenu {
+    background-color: rgb(210, 162, 183);
+    ;
+    display: none;
+    position: absolute;
+    padding: 20px 0;
+    width: 240px;
+    /* padding-inline-start: 0; */
+}
+
+.submenu a {
+    display: block;
+    width: 200px;
+    padding: 20px;
+}
+
+#menuDiv ul li:hover .submenu {
+    display: block;
+}
+
+#top-button {
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+
 }
