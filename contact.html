@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="description" content="Czesław to najlepszy kotek na świecie. Poznaj Czesława!">
-       <title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Bebas+Neue&family=Bitter:wght@300&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="../klaudiakurylo.github.io/css/contact.css">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Czesław to najlepszy kotek na świecie. Poznaj Czesława!">
+    <title>
         Kontakt
-       </title> 
-    </head>
-    <body style="background-color: #D2A2B7;">
-        <a href="index.html"> 
-            <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="100"> 
-        </a>
-        <p>Napisz do nas maila lub zadzwoń:</p>
+    </title>
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <h1 class="introduction" id="hello">Hello Czesio! &#128568</h1>
+            <a href="index.html">
+                <img src="images/czesio.png" alt="Tu był Czesio, ale poszedł jeść" width="100">
+            </a>
+        </header>
         <address>
-            &#128233 <a href="mailto:klaudia.trepa@gmail.com?subject=Puk puk, tu Czesio!">klaudia.trepa@gmail.com</a><br><br>
+            <p>albo napisz do do nas maila lub zadzwoń!</p>
+            &#128233 <a
+                href="mailto:klaudia.trepa@gmail.com?subject=Puk puk, tu Czesio!">klaudia.trepa@gmail.com</a><br><br>
             &#128242 <a href="tel:+48507700859">507700859</a><br><br>
         </address>
-        <form action="contact_form.php" method="post">
-            <fieldset>
-                <legend>lub napisz do nas przez formularz!</legend><br>
-                E-mail: <input type="email" placeholder="Wpisz swój e-mail" required><br>
-                Temat: <input type="text" required> <br>
-                Treść: <br>
-                <textarea name="tresc" id="tresc" cols="30" rows="10" required></textarea><br><br>
-                <input type="submit" value="Wyślij">
-            </fieldset>
-        </form>
-    </body>
-</html>
+        <section>
+            <form action="contact_form.php" method="post">
+                <fieldset>
+                    <legend> Napisz do nas przez formularz...</legend><br>
+                    E-mail: <input type="email" placeholder="Wpisz swój e-mail" required><br>
+                    Temat: <input type="text" required> <br>
+                    Treść: <br>
+                    <textarea name="tresc" id="tresc" cols="80" rows="30" required></textarea><br><br>
+                    <input id="submit" type="submit" value="Wyślij">
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            Strona została stworzona przez Maupkę&copy.
+        </footer>
+    </div>
 
+</body>
+
+</html>

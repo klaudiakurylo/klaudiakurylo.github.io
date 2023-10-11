@@ -1,0 +1,62 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-weight: 800;
+    margin: 0%;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "section address"
+        "footer footer"
+    ;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+
+#container header {
+    grid-area: header;
+}
+
+#container header img {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.introduction {
+    text-align: center;
+}
+
+#container address {
+    grid-area: address;
+    text-align: center
+}
+
+#container section {
+    grid-area: section;
+    text-align: center;
+    padding: 20px;
+}
+
+#container footer {
+    grid-area: footer;
+    margin-top: auto;
+    opacity: 0.7;
+}
+
+#submit {
+    background-color: rgb(134, 82, 104);
+    border-radius: 5px;
+    padding-block: 2px;
+    padding-inline: 20px;
+    cursor: pointer;
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+}
